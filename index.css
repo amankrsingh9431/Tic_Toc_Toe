@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #B9F18C;
+    justify-content: center;
+}
+
+.container {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    height: 58vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#msg {
+    position: absolute;
+    font-size: 55px;
+    top: 1%;
+    display: none;
+    animation: animo 2s forwards;
+}
+
+@keyframes animo {
+    50% {
+        top: 35%;
+    }
+
+    70% {
+        top: 25%;
+    }
+
+    100% {
+        top: 42%;
+    }
+}
+
+.boxcontain {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 12px;
+    font-size: 25px;
+    background: rgb(197, 240, 110);
+    color: black;
+}
+
+#reset {
+    border: 2px solid white;
+    font-size: 25px;
+    margin: 12px;
+    padding: 5px;
+    width: 10%;
+    text-align: center;
+    color: #B9F18C;
+    background: black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background: rgb(51, 50, 50);
+}
+
+#moveturn {
+    text-align: center;
+}
+
+#winteam {
+    text-align: center;
+    display: none;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+#happy {
+    height: 12px;
+    position: absolute;
+    top: 0%;
+    transform: scale(0.5);
+    animation: excited 2s forwards;
+    display: none;
+}
+
+@keyframes excited {
+    100% {
+        top: 35%;
+        height: 30%;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:521px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    
+@keyframes excited {
+    100% {
+        top: 18%;
+        height: 15%;
+        transform: scale(1);
+    }
+}
+  #reset {
+        width: 25%;
+    }
+
+    .container {
+        height: 52vh;
+    }
+}
